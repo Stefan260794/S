@@ -6,3 +6,4 @@
 ^\.rproj$
 ^\.gitignore$
 ^\.Rcheck$
+^\.travis\.yml$
