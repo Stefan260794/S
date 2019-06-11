@@ -2,7 +2,10 @@ Package: Assignment
 Type: Package
 Title: Assignment for Progstat 2019
 Version: 0.1.0
-Author: Florian Pfisterer
+Authors@R: c(
+    person("Vorname1", "Nachname1", , "datacamp-email@gmail.com", c("aut", "cre"),
+    comment = c("MatNr." = "Matrikelnr1", "PO" = "Pruefgsordnung", "Moodle" = "Ja/Nein"))
+  )
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: Contains assignments for Programmieren mit statistischer Software 2019. Solutions can be checked using Travis!
 License: MIT + file LICENSE
