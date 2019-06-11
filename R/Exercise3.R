@@ -12,6 +12,8 @@
 #       `forcats::<Funktion>`
 
 
+
+
 # Aufgabe 3b:
 # Erstellen sie einen Funktion `plot_seats_histogram`, welche als Ausgabe ein ggplot2 objekt
 # mit einem Histogram der Sitzverteilung ausgibt.

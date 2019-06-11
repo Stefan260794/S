@@ -12,12 +12,13 @@ LazyData: true
 Suggests:
     testthat,
     devtools,
-    forcats
-Imports:
+    forcats,
     nycflights13
 Depends:
     dplyr,
     tidyr,
     ggplot2,
+    magrittr,
+    tidyr,
     checkmate
 RoxygenNote: 6.1.1
