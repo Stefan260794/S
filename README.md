@@ -1,4 +1,5 @@
 # testassign
+[![Build Status](https://travis-ci.com/pfistfl/testassign.svg?token=7tDtmgYeNFqNvWqL5zWb&branch=master)](https://travis-ci.com/pfistfl/testassign)
 
 ## How to work with testassign:
 1. Make sure you have all relevant packages installed: 
