@@ -25,7 +25,9 @@ install.packages("nycflights13")
 
 1. After a few minutes, travis checks should run! You can observe the results on the Github page of your repository:
  `commits -> green checkmark` (See screenshots).
+ 
 ![Commit](inst/commits.jpg)
+
 ![Checkmark](inst/success.png)
 
  1. If you have successfully created all functions and the green checkmark appears, our tests successfully passed for each function!
