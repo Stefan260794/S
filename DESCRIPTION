@@ -9,5 +9,15 @@ Description: More about what it does (maybe more than one line)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: 
-    testthat
+Suggests:
+    testthat,
+    ggplot2,
+    devtools
+Imports:
+    nycflights13
+Depends:
+    dplyr,
+    magrittr,
+    tidyr,
+    checkmate
+RoxygenNote: 6.1.1
