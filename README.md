@@ -7,7 +7,7 @@ install.packages("tidyverse")
 install.packages("nycflights13")
 ```
 
-1. If not installed, install **git** (\url{https://git-scm.com/downloads}). Afterwards restart RStudio.
+1. If not installed, install **git** (https://git-scm.com/downloads). Afterwards restart RStudio.
 
 1. Download the Assignment Repository:
   `RStudio -> File -> New Project ->  Version Control -> git`
