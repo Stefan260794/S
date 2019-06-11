@@ -4,7 +4,9 @@
 \name{testAssign}
 \alias{testAssign}
 \alias{testAssign-package}
-\title{\code{testAssign} package}
+\title{\code{testAssign} package
+Please do not touch anything above the TEST_EX_X Lines!}
 \description{
 \code{testAssign} package
+Please do not touch anything above the TEST_EX_X Lines!
 }

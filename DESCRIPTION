@@ -11,14 +11,12 @@ Encoding: UTF-8
 LazyData: true
 Suggests:
     testthat,
-    devtools,
-    forcats,
-    nycflights13
+    devtools
 Depends:
     dplyr,
     tidyr,
     ggplot2,
-    magrittr,
-    tidyr,
+    nycflights13,
+    forcats,
     checkmate
 RoxygenNote: 6.1.1
