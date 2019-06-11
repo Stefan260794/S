@@ -15,7 +15,13 @@ globVars = c(".", "type", "air_time", "distance", "flights", "manufacturer", "mo
 if(getRversion() >= "2.15.1")  utils::globalVariables(globVars)
 
 
-# TEST_EX_X Turn on/off Tests by selecting TRUE/FALSE
+
+# ----------------------------------------------------------------------------------------
+# Turn on/off Tests
+# ----------------------------------------------------------------------------------------
+# Example:
+# In order to enable tests for Exercise 1 set TEST_EX_1 = TRUE
+
 TEST_EX_1 = FALSE
 TEST_EX_2 = FALSE
 TEST_EX_3 = FALSE
