@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
 
-\usepackage[latin1]{inputenc}
+\usepackage{inputenc}
 \usepackage[austrian]{babel}
 \usepackage{a4wide,paralist}
 \usepackage{amsmath,amsthm}
@@ -12,7 +12,9 @@
 \usepackage{xcolor}
 \definecolor{asparagus}{rgb}{0.53, 0.66, 0.42}
 \usepackage{tikz}               % TikZ
-\usetikzlibrary{calc, backgrounds, arrows, positioning, shapes, snakes, shapes.geometric, fit, decorations.pathmorphing, decorations.text, decorations.markings}
+\usetikzlibrary{calc, backgrounds, arrows, positioning, shapes, shapes.geometric, fit, decorations.pathmorphing, decorations.text, decorations.markings}
+\usetikzlibrary{decorations}
+\usepgflibrary{decorations.markings}
 
 \newcommand{\bubblethis}[1]{
   \tikz[remember picture,baseline]{\node[anchor=base,inner sep=0,outer sep=0]%
@@ -71,7 +73,7 @@
     \begin{itemize}
       \item Diese Hausarbeit besteht aus {3 Aufgaben}.
       \item Eine verbindliche Anmeldung zur Veranstaltung (d.h. Scheinerwerb) erfolgt mit Abgabe des ersten Teils der Hausarbeit.
-      \item {\bf Letztmöglicher Abgabetermin: Samstag, 10. Juni 2018 (23:55 Uhr CEST).}\\
+      \item {\bf Letztmöglicher Abgabetermin: Freitag 12. Juli 2019 (23:00 Uhr CEST).}\\
     \end{itemize}
 
     \subsection*{Hinweise zur Bearbeitung und Abgabe}
@@ -79,12 +81,13 @@
     \begin{itemize}
       \item Verwenden Sie für Ihre Lösung ausschließlich die Ordnerstruktur - Vorlage.
 
-      \item Bitte tragen Sie die Namen und Martikelnummern in das Feld Author@R der Datei DESCRIPTION (siehe Ordnerstruktur) ein.
-       Fügen Sie außerdem alle prüfungsrelevanten Informationen (Martikelnummer, Studiengang, Prüfungsordnung) hinzu.
+      \item Bitte tragen Sie die Namen und Martikelnummern in das Feld AuthoratR der Datei DESCRIPTION (siehe Ordnerstruktur) ein.
+       Fügen Sie außerdem alle pruefungsrelevanten Informationen (Martikelnummer, Studiengang, Pruefungsordnung) hinzu.
        Geben Sie auch an, ob Sie mit einer Veröffentlichung Ihrer Note auf Moodle einverstanden sind oder nicht.
 
       \item Machen Sie unbedingt durch Kommentare deutlich, welcher Programm-Code zu welcher (Teil-) Aufgabe gehört.
-            Es werden NUR Lösungen korrigiert die im korrekten File liegen korrigiert. Beispiel: Aufgabe1 in Exercise1.R etc.
+            Es werden NUR Lösungen korrigiert die im korrekten File liegen korrigiert.\\
+            Beispiel: Aufgabe1 in Exercise1.R etc.
 
       \item Achten Sie darauf, dass Ihr Programm-Code nachvollziehbar, ordentlich dokumentiert und kommentiert ist. Dazu gehören auch Kommentare zum erwarteten Input und Output jeder selbstdefinierten Funktion (mit Typ!).
 
@@ -96,7 +99,7 @@
 
       \item Alle Teilschritte, die aufgrund eines fehlerhaften Programm-Codes eine nicht beabsichtigte Fehlermeldung erzeugen, werden mit 0 Punkten bewertet.
 
-      \item Beachten sie die Datei README.md in ihrem Repository, für weitere Informationen.
+      \item Beachten sie die Datei README.md in ihrem Repository, fuer weitere Informationen.
 
     \end{itemize}
 
