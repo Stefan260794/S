@@ -1,6 +1,6 @@
 context("Test Assignment Exercise 3a")
-test_that("Test 2a", {
-  skip_if_not(TEST_EX_3)
+test_that("Test 3a", {
+  skip_if_not(exists("repair_manufacturer"))
   df = repair_manufacturer(planes)
   expect_class(df, "tbl_df")
   expect_equal(colnames(df), colnames(planes))
@@ -13,8 +13,8 @@ test_that("Test 2a", {
 
 
 context("Test Assignment Exercise 3b")
-test_that("Test 2b", {
-  skip_if_not(TEST_EX_3)
+test_that("Test 3b", {
+  skip_if_not(exists("plot_seats_histogram"))
   p = plot_seats_histogram(planes)
   expect_class(p, "ggplot")
 })

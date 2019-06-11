@@ -1,6 +1,6 @@
 context("Test Assignment Exercise 2a")
 test_that("Test 2a", {
-  skip_if_not(TEST_EX_2)
+  skip_if_not(exists("get_avg_distance_by_model"))
   df = get_avg_distance_by_model()
   expect_class(df, "tbl_df")
   expect_equal(colnames(df), c("model", "n", "distance"))
@@ -10,7 +10,7 @@ test_that("Test 2a", {
 })
 
 test_that("Test 2a", {
-  skip_if_not(TEST_EX_2)
+  skip_if_not(exists("get_avg_distance_by_model"))
   df = get_avg_distance_by_model()
   expect_class(df, "tbl_df")
   expect_equal(colnames(df), c("model", "n", "distance"))
@@ -22,7 +22,7 @@ test_that("Test 2a", {
 
 context("Test Assignment Exercise 2b")
 test_that("Test 2b", {
-  skip_if_not(TEST_EX_2)
+  skip_if_not(exists("get_avg_distance_by_type"))
   df = get_avg_distance_by_type()
   expect_equal(colnames(df), c("manufacturer", "type", "n", "distance"))
   expect_class(df, "tbl_df")

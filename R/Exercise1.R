@@ -11,7 +11,6 @@
 # Output der Funktion soll ein `tibble  (tbl_df)` sein, der nur die Spalten `tailnum` und `model` enthält.
 
 
-
 # Aufgabe 1b:
 # Im folgenden sollen nur die Modellbezeichnungen von Flugzeugen mit einer unteren und oberen Anzahl Sitzen
 # (wie in 1a) sein.

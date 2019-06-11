@@ -1,4 +1,4 @@
 library(testthat)
 library(checkmate)
-library(testAssignment)
-test_check("testAssignment")
+library(Assignment)
+test_check("Assignment")
