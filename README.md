@@ -24,7 +24,9 @@ install.packages("nycflights13")
 1. Add the files, commit them and when you are ready push them to GitHub.
 
 1. After a few minutes, travis checks should run! You can observe the results on the Github page of your repository:
- `Commits -> Green checkmark` (See screenshots).
+ `commits -> green checkmark` (See screenshots).
+![Commit](inst/commit.jpg)
+![Checkmark](inst/checkmark.png)
 
  1. If you have successfully created all functions and the green checkmark appears, our tests successfully passed for each function!
 
