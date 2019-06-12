@@ -41,6 +41,8 @@ install.packages("nycflights13")
     ![Commit](inst/commits.jpg)
 
     ![Checkmark](inst/success.png)
+    
+    You can push a new version to Github multiple times. The checks are then run again for every commit!
 
    
 1. **Tests for each function are activated as soon as you defined the function.
