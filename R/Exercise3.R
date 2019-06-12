@@ -1,23 +1,27 @@
 # In Aufgabe 3 sollen weiterhin Datensätze aus dem Paket *nycflights13* verwendet werden.
+
 # Aufgabe 3a:
-# Erstellen sie einen Funktion `fix_manufacturer`, welche als Ausgabe ein `tibble` (Klasse `tbl_df`)
+# Erstellen Sie eine Funktion `fix_manufacturer`, welche als Ausgabe ein `tibble` (Klasse `tbl_df`)
 # ausgibt.
-# Der Input ist der **planes** Datensatz
-# Die Ausgabe entspricht dem originalen Datensatz mit einer angepassten `manufacturer` Variable:
-# - Zeilen mit fehlender manufacturer Variable werden gelöscht.
-# - Konvertieren sie manufacturer zu einer Faktor-Variable.
-# - AIRBUS und AIRBUS INDUSTRIE wird zu einer Kategorie zusammengefasst
-# - alle anderen `manufacturer` werden zu einer Kateogrie "Other" zusammengefasst.
-# Tipp: Vielleicht kann das Paket `forcats` dafür nützlich sein. Verwenden sie in dem Fall
+# Als Input soll die Funktion den **planes** Datensatz erhalten.
+# Der Output soll dem originalen Datensatz bis auf die folgende Veränderungen der `manufacturer`-Variable entsprechen:
+# Verändern Sie die `manufacturer`-Variable, indem Sie
+#   - `manufacturer` zu einer Faktor-Variable konvertieren.
+#   - AIRBUS und AIRBUS INDUSTRIE zu einer Kategorie zusammenfassen.
+#   - alle übrigen `manufacturer`zu einer Kateogrie "Other" zusammenfassen.
+#   - Zeilen mit einem unbekannten `manufacturer`-Wert löschen (das
+#     beeinflusst auch die anderen Variablen)
+## Tipp: Vielleicht kann das Paket *forcats* dafür nützlich sein. Verwenden Sie in dem Fall
 #       `forcats::<Funktion>`
 
 
 
-
 # Aufgabe 3b:
-# Erstellen sie einen Funktion `plot_seats_histogram`, welche als Ausgabe ein ggplot2 objekt
-# mit einem Histogram der Sitzverteilung ausgibt.
-# Der Input ist der **planes** Datensatz
-# - Verwenden sie die in 3a) definierte Funktion um die manufacturer Spalte zusammenzufassen.
-# - Unterteilen sie den Plot Sinnvoll nach der neuen `manufacturer` Spalte.
-# Output der Funktion ist ein `ggplot`-Objekt.
+# Erstellen Sie eine Funktion `plot_seats_histogram`, welche ein Histogramm der Sitzverteilung ausgibt.
+# Als Input soll die Funktion den **planes** Datensatz erhalten.
+# Der Output der Funktion soll ein `ggplot`-Objekt sein.
+# - Verwenden Sie die in 3a) definierte Funktion, um die `manufacturer`-Spalte zusammenzufassen.
+# - Unterteilen Sie den Plot sinnvoll nach der neuen `manufacturer`-Spalte.
+
+
+
