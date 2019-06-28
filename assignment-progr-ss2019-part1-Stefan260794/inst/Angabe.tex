@@ -1,0 +1,115 @@
+\documentclass[a4paper]{article}
+
+\usepackage{inputenc}
+\usepackage[austrian]{babel}
+\usepackage{a4wide,paralist}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{asparagus}{rgb}{0.53, 0.66, 0.42}
+\usepackage{tikz}               % TikZ
+\usetikzlibrary{calc, backgrounds, arrows, positioning, shapes, shapes.geometric, fit, decorations.pathmorphing, decorations.text, decorations.markings}
+\usetikzlibrary{decorations}
+\usepgflibrary{decorations.markings}
+
+\newcommand{\bubblethis}[1]{
+  \tikz[remember picture,baseline]{\node[anchor=base,inner sep=0,outer sep=0]%
+    (z1) {};\node[overlay,cloud callout,callout relative pointer={(-0.2cm,-0.7cm)},%
+    aspect=2.5,draw=black] at ($(z1.north)+(-0.5cm,1.6cm)$) {#1};}%
+}%
+
+\newcommand{\speechthis}[1]{
+  \tikz[remember picture,baseline]{\node[anchor=base,inner sep=0,outer sep=0]%
+    (z1) {};\node[overlay,ellipse callout,draw=black, fill=white]
+    at ($(z1.west)+(-0.5cm,0.8cm)$) {#1};}%
+}%
+
+\usepackage{listings}
+\lstset{
+  language=R,
+  basicstyle=\small\ttfamily,
+  backgroundcolor=\color{white},
+  breaklines=true,
+  keywordstyle=\color{blue},
+  stringstyle=\color{asparagus},
+  deletekeywords={index},
+  otherkeywords={a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z}}
+
+\font \sfbold=cmssbx10
+
+\setlength{\oddsidemargin}{0cm} \setlength{\textwidth}{16cm}
+
+\renewcommand{\labelenumi}{{\bf Aufgabe \theenumi :}}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\newcommand{\code}[1]{\mbox{\lstinline!#1!}}
+
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+
+\pagestyle{plain}
+
+\begin{document}
+  \sloppy \thispagestyle{empty} \setlength{\parindent}{0cm}
+  \rule{0cm}{0cm}
+  \vspace{-3.8cm}\\
+
+  {\hrule \vspace{.2cm} {\sfbold Programmieren mit statistischer Software}\hfill
+    {\sfbold Sommersemester 2019}\\
+    {\sfbold Moritz Herrmann, Florian Pfisterer}\hfill {\sfbold
+      Hausarbeit Teil 1}
+
+
+    \vspace{.2cm} \hrule \vspace{1.5cm}
+
+    \begin{center}
+      {\bf \LARGE Hausarbeit - Teil 1}
+    \end{center}
+
+    \subsection*{Organisatorisches}
+    \begin{itemize}
+      \item Diese Hausarbeit besteht aus {3 Aufgaben}.
+      \item Eine verbindliche Anmeldung zur Veranstaltung (d.h. Scheinerwerb) erfolgt mit Abgabe des ersten Teils der Hausarbeit.
+      \item {\bf Letztmoeglicher Abgabetermin: Freitag 29. Juni 2019 (23:00 Uhr CEST).}\\
+    \end{itemize}
+
+    \subsection*{Hinweise zur Bearbeitung und Abgabe}
+
+    \begin{itemize}
+
+      \item Erstellen sie einen Github Account falls noch nicht geschehen.
+
+      \item Verwenden Sie fuer Ihre Loesung ausschliesslich die Ordnerstruktur - Vorlage.
+
+
+      \item Bitte tragen Sie die Namen und Martikelnummern in das Feld Author@R der Datei DESCRIPTION ein.
+       Fuegen Sie ausserdem alle pruefungsrelevanten Informationen (Martikelnummer, Studiengang, Pruefungsordnung) hinzu.
+       Geben Sie auch an, ob Sie mit einer Veroeffentlichung Ihrer Note auf Moodle einverstanden sind oder nicht.
+
+      \item Machen Sie unbedingt durch Kommentare deutlich, welcher Programm-Code zu welcher (Teil-) Aufgabe gehoert.
+            Es werden NUR Loesungen korrigiert die im korrekten File liegen korrigiert.\\
+            Beispiel: Aufgabe1 in Exercise1.R etc.
+
+      \item Achten Sie darauf, dass Ihr Programm-Code nachvollziehbar, ordentlich dokumentiert und kommentiert ist. Dazu gehoeren auch Kommentare zum erwarteten Input und Output jeder selbstdefinierten Funktion (mit Typ!).
+
+      \item Stellen Sie des Weiteren sicher, dass die Parameter, welche an selbst-definierte Funktionen uebergeben werden, dem erwarteten Format entsprechen. Achten Sie auf klare Fehlermeldungen (Stichwort: Defensives Programmieren).
+
+      \item Bitte folgen Sie im Code dem innerhalb des Kurses festgelegten Styleguide (siehe Moodle). Achten Sie insbesondere auf sinnvolle Benennung von Variablen und Funktionen sowie wohlstrukturierten Code. Dies gilt auch fuer erzeugte Dateien / Plots etc..
+
+      \item Stellen Sie bitte vor Beginn der Bearbeitung sicher, dass die folgenden Pakete auf Ihrem System installiert sind:  {\bf tidyverse, ggplot2, devtools, testthat}
+
+      \item Alle Teilschritte, die aufgrund eines fehlerhaften Programm-Codes eine nicht beabsichtigte Fehlermeldung erzeugen, werden mit 0 Punkten bewertet.
+
+
+    \end{itemize}
+
+  \textbf{Weitere Informationen:}\\
+  Durch Klicken auf den Link wird ein Repository, auf welches nur sie Zugriff haben erstellt.
+  Laden sie die Vorlage von diesem Repository herunter und nach dem bearbeiten der Teilaufgaben wieder auf dieses Repository
+  hoch. Die Github Integration von RStudio kann hierbei nützlich sein.
+  Vor dem Ende des Bearbeitungszeitraums findet keine Korrektur statt, d.h. die zum Ende des Bearbeitungszeitraums hochgeladene   Version gilt für die Bewertung.
+  Beachten sie die Datei README.md in ihrem Repository, fuer weitere Informationen.
+  \end{document}
