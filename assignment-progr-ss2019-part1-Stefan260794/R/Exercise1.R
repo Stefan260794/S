@@ -4,11 +4,10 @@
 # darin enthaltenen Datensätzen vertraut.
 
 #Laden aller benötigten Pakete
-devtools::load_all()
-  library(nycflights13)
-  library(dplyr)
-  library(forcats)
-  library(ggplot2)
+  #library(nycflights13)
+  #library(dplyr)
+  #library(forcats)
+  #library(ggplot2)
 
 #\"{O}ffnen der einzelnen Datens\"{a}tze von *nycflights13*
 nycflights13::airlines
